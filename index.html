@@ -205,6 +205,116 @@
 		    .nightModelabel {
 		        display: none;
 		    }
+		    
+		    .configPannelBg {
+		        position: fixed;
+		        left: 0px;
+		        bottom: 70px;
+		        width: 100%;
+		        height: 135px;
+		        background-color: #000;
+		        opacity: 0.9;
+		        color: #fff;
+		        z-index: 999;
+		    }
+		    .configPannel {
+		        position: fixed;
+		        left: 0px;
+		        bottom: 70px;
+		        width: 100%;
+		        height: 135px;
+		        background: none;
+		        color: #fff;
+		        z-index: 1000;
+		    }
+		    
+		    .configChild {
+		        margin: 15px;
+		        padding: 5px 10px;
+		    }
+		    
+		    .configChild span {
+		        display: inline-block;
+		        padding-left: 10px;
+		        padding-right: 20px;
+		    }
+		    
+		    .fontSize {
+		        background: none;
+		        border-radius: 16px;
+		        border: 1px #8c8c8c solid;
+		        color: #fff;
+		        padding: 5px 40px;
+		    }
+		    
+		    .fontSize:nth-child(2) {
+		        margin-right: 10px;
+		    }
+		    
+		    .bgcolor_white {
+		        position: relative;
+		        display:inline-block;
+		        background-color: #fff;
+		        border-radius: 15px;
+		        width: 30px;
+		        height: 30px;
+		        vertical-align: -14px;
+		        
+		    }	
+		    
+		    .bgcolorBorder{
+		        position: absolute;
+		        top: -2px;
+		        left: -2px;
+		        border-radius: 16px;
+		        border: 1px solid #ff7800;
+		        width: 32px;
+		        height: 32px;
+		    }
+		    
+		    .bgcolor_pink {
+		        position: relative;
+		        display:inline-block;
+		        background-color: #ffcccc;
+		        border-radius: 15px;
+		        width: 30px;
+		        height: 30px;
+		        vertical-align: -14px;		        
+		    }
+		    
+		    .bgcolor_gray {
+		        position: relative;
+		        display:inline-block;
+		        background-color: #cccccc;
+		        border-radius: 15px;
+		        width: 30px;
+		        height: 30px;
+		        vertical-align: -14px;			        
+		    }
+		    
+		    .bgcolor_green {
+		        position: relative;
+		        display:inline-block;
+		        background-color: #ccffcc;
+		        border-radius: 15px;
+		        width: 30px;
+		        height: 30px;
+		        vertical-align: -14px;			        
+		    }		    
+		    
+		    .bgcolor_dark{
+		        position: relative;
+		        display:inline-block;
+		        background-color: #333366;
+		        border-radius: 15px;
+		        width: 30px;
+		        height: 30px;
+		        vertical-align: -14px;
+		    }
+		    
+		    .configChild>div {
+		        margin: 0 0 0 10px;
+		    }
 
 		</style>
 	</head>
@@ -309,6 +419,40 @@
                     <div id="nightModeIcon" class="nightModeIcon"></div>
                     <div id="nightModelabel" class="nightModelabel">白天</div>
                 </div>
+		    </div>
+		</div>
+		
+		<div id="configPannelBg" class="configPannelBg"></div>
+		<div id="configPannel" class="configPannel">
+		    <div class="configChild">
+		        <span>字体</span>
+		        <button id="largeFont" class="fontSize">大</button>
+		        <button id="smallFont" class="fontSize">小</button>
+		    </div>
+		    
+		    <div class="configChild">
+		        <span>背景</span>
+		        
+		        <div id="bgcolor_white" class="bgcolor_white">
+		            <div id="bgcolorBorder_white" class="bgcolorBorder"></div>
+		        </div>
+		        
+		        <div id="bgcolor_pink" class="bgcolor_pink">
+		            <div id="bgcolorBorder_pink" class="bgcolorBorder" style="display:none"></div>
+		        </div>
+		        
+		        <div id="bgcolor_gray" class="bgcolor_gray">
+		            <div id="bgcolorBorder_gray" class="bgcolorBorder" style="display:none"></div>
+		        </div>
+		        
+		        <div id="bgcolor_green" class="bgcolor_green"> 
+		            <div id="bgcolorBorder_green" class="bgcolorBorder" style="display:none"></div>
+		        </div>
+		        
+		        <div id="bgcolor_dark" class="bgcolor_dark">
+		            <div id="bgcolorBorder_dark" class="bgcolorBorder" style="display:none"></div>
+		        </div>		        
+		        
 		    </div>
 		</div>
 		
